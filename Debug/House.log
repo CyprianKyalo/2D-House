@@ -1,1 +1,8 @@
-﻿  House.vcxproj -> C:\Users\Cyprian\Desktop\OpenGLRoot\House\Debug\House.exe
+﻿  main.cpp
+C:\Users\Cyprian\Desktop\OpenGLRoot\House\main.cpp(8,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Cyprian\Desktop\OpenGLRoot\House\main.cpp(27,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Cyprian\Desktop\OpenGLRoot\House\main.cpp(36,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Cyprian\Desktop\OpenGLRoot\House\main.cpp(46,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Cyprian\Desktop\OpenGLRoot\House\main.cpp(55,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Cyprian\Desktop\OpenGLRoot\House\main.cpp(64,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+  House.vcxproj -> C:\Users\Cyprian\Desktop\OpenGLRoot\House\Debug\House.exe
