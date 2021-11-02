@@ -69,6 +69,31 @@ void display(void)
 	glVertex2d(5.25, 4.9);
 	glEnd();
 
+	// First  Circle
+	glColor3ub(255, 255, 0); // yellow background
+	float i = 0.0f;
+	float r = 0.30f;
+	float o = 9.3f;
+	float x = 6.35f;
+	glBegin(GL_TRIANGLE_FAN);
+	for (i = 0.0f; i <= 360; i++)
+		glVertex2f(r * cos(3.14 * i / 180.0) + x, r * sin(3.14 * i / 180.0) + o);
+
+	glEnd();
+
+
+	// Second  Circle
+	glColor3f(0, 0, 0);  //black background
+	float p = 0.0f;
+	float q = 0.35f;
+	float z = 9.45f;
+	float l = 6.45f;
+	glBegin(GL_TRIANGLE_FAN);
+	for (p = 0.0f; p <= 360; p++)
+		glVertex2f(r * cos(3.14 * p / 180.0) + l, q * sin(3.14 * p / 180.0) + z);
+
+	glEnd();
+
 	// Door Knob
 	/*float i = 0.0f;
 	float r = 0.08f;
@@ -78,6 +103,7 @@ void display(void)
 	for (i = 0.0f; i <= 360; i++)
 		glVertex2f(r * cos(3.14 * i / 180.0) + x, r * sin(3.14 * i / 180.0) + y);
 	glEnd();*/
+
 
 	// Top of House
 	/*float a = 0.0f;
@@ -98,16 +124,16 @@ int main(int argc, char** argv)
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB | GLUT_DEPTH);
 
 	glutInitWindowPosition(100, 100);
-	glutInitWindowSize(1200, 700);
+	glutInitWindowSize(1000, 500);
 	glutCreateWindow("Rectangle");
 
 	glClearColor(0.0, 0.0, 0.0, 0.0);         // black background
 	glMatrixMode(GL_PROJECTION);              // sets the viewing projection, properties of the camera that views the object
 	glLoadIdentity();                           // start with identity matrix
-	glOrtho(0.0, 10.0, 0.0, 10.0, 1.0, 1.0);   // setting the coordinate system
+	glOrtho(0.0, 10.0, 0.0, 10.0, -1.0, 1.0);   // setting the coordinate system
 
 	glutDisplayFunc(display);
 	glutMainLoop();
 
 	return 0;
-}
+}	 
