@@ -69,7 +69,7 @@ void display(void)
 	glVertex2d(5.25, 4.9);
 	glEnd();
 	
-	// First  Circle
+	// First Circle
 	glColor3ub(255, 255, 0); // yellow background
 	float i = 0.0f;
 	float r = 0.30f;
@@ -82,7 +82,7 @@ void display(void)
 	glEnd();
 
 
-	// Second  Circle
+	// Second Circle
 	glColor3f(0, 0, 0);  //black background
 	float p = 0.0f;
 	float q = 0.35f;
@@ -91,26 +91,9 @@ void display(void)
 	glBegin(GL_TRIANGLE_FAN);
 	for (p = 0.0f; p <= 360; p++)
 		glVertex2f(r * cos(3.14 * p / 180.0) + l, q * sin(3.14 * p / 180.0) + z);
+	
+	glEnd();
 
-	// Door Knob
-	/*float i = 0.0f;
-	float r = 0.08f;
-	float y = 3.3f;
-	float x = 4.35f;
-	glBegin(GL_TRIANGLE_FAN);
-	for (i = 0.0f; i <= 360; i++)
-		glVertex2f(r * cos(3.14 * i / 180.0) + x, r * sin(3.14 * i / 180.0) + y);
-	glEnd();*/
-
-	// Top of House
-	/*float a = 0.0f;
-	float b = 5.0f;
-	float c = 5.25f;
-	float d = 2.75f;
-	glBegin(GL_TRIANGLE_FAN);
-	for (a = 0.0f; a <= 180; i++)
-		glVertex2f(b * cos(3.14 * a / 90.0) + d, b * sin(3.14 * a / 90.0) + c);
-	glEnd();*/
 
 	glFlush();  // Forces previously issued OpenGL commands to begin execution
 }
