@@ -1,1 +1,2 @@
 C:\Users\Cyprian\Desktop\OpenGLRoot\House\Debug\House.exe
+C:\OpenGLroot\2D-House\Debug\House.exe
