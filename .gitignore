@@ -1,2 +1,3 @@
 *.opendb
 House.vcxproj
+Debug/House.log
