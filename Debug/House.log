@@ -9,4 +9,8 @@ C:\Users\Cyprian\Desktop\OpenGLRoot\House\main.cpp(80,71): warning C4244: 'argum
 C:\Users\Cyprian\Desktop\OpenGLRoot\House\main.cpp(80,40): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
 C:\Users\Cyprian\Desktop\OpenGLRoot\House\main.cpp(93,71): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
 C:\Users\Cyprian\Desktop\OpenGLRoot\House\main.cpp(93,40): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Cyprian\Desktop\OpenGLRoot\House\main.cpp(98,25): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\Cyprian\Desktop\OpenGLRoot\House\main.cpp(105,71): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\Cyprian\Desktop\OpenGLRoot\House\main.cpp(105,40): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+  LINK : C:\Users\Cyprian\Desktop\OpenGLRoot\House\Debug\House.exe not found or not built by the last incremental link; performing full link
   House.vcxproj -> C:\Users\Cyprian\Desktop\OpenGLRoot\House\Debug\House.exe

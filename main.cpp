@@ -94,15 +94,16 @@ void display(void)
 
 	glEnd();
 
-	// Door Knob
-	/*float i = 0.0f;
-	float r = 0.08f;
-	float y = 3.3f;
-	float x = 4.35f;
+	//Door Knob
+	glColor3f(0.6, 0.2, 0.3);
+	float t = 0.0f;
+	float m = 0.08f;
+	float n = 3.1f;
+	float v = 4.35f;
 	glBegin(GL_TRIANGLE_FAN);
-	for (i = 0.0f; i <= 360; i++)
-		glVertex2f(r * cos(3.14 * i / 180.0) + x, r * sin(3.14 * i / 180.0) + y);
-	glEnd();*/
+	for (t = 0.0f; t <= 360; t++)
+		glVertex2f(m * cos(3.14 * t / 180.0) + v, m * sin(3.14 * t / 180.0) + n);
+	glEnd();
 
 
 	// Top of House
