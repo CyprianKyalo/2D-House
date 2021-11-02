@@ -98,7 +98,7 @@ void display(void)
 	glColor3f(0.6, 0.2, 0.3);
 	float t = 0.0f;
 	float m = 0.08f;
-	float n = 3.1f;
+	float n = 3.4f;
 	float v = 4.35f;
 	glBegin(GL_TRIANGLE_FAN);
 	for (t = 0.0f; t <= 360; t++)
@@ -107,14 +107,15 @@ void display(void)
 
 
 	// Top of House
-	/*float a = 0.0f;
-	float b = 5.0f;
-	float c = 5.25f;
-	float d = 2.75f;
+	glColor3f(0.6, 0.2, 0.3);
+	float a = 0.0f;
+	float b = 1.5f;
+	float c = 7.00f;
+	float d = 4.00f;
 	glBegin(GL_TRIANGLE_FAN);
-	for (a = 0.0f; a <= 180; i++)
-		glVertex2f(b * cos(3.14 * a / 90.0) + d, b * sin(3.14 * a / 90.0) + c);
-	glEnd();*/
+	for (a = 0.0f; a <= 180; a++)
+		glVertex2f(b * cos(3.14 * a / 180.0) + d, b * sin(3.14 * a / 180.0) + c);
+	glEnd();
 
 	glFlush();  // Forces previously issued OpenGL commands to begin execution
 }
