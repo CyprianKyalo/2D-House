@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <GL/glut.h>
 #include <cmath>
+#define M_PI
+
+
 void display(void)
 {
 	glClear(GL_COLOR_BUFFER_BIT);  // sets the bitplane area of the window to values previously selected by glClearColor
@@ -80,16 +83,20 @@ void display(void)
 	glEnd();*/
 
 	// Top of House
-	/*float a = 0.0f;
-	float b = 5.0f;
-	float c = 5.25f;
-	float d = 2.75f;
-	glBegin(GL_TRIANGLE_FAN);
-	for (a = 0.0f; a <= 180; i++)
-		glVertex2f(b * cos(3.14 * a / 90.0) + d, b * sin(3.14 * a / 90.0) + c);
-	glEnd();*/
+	int number = 20; //number of vertices,
+	float radius = 0.4f; // radius of the circle
+	float twopi = 2.0f * 3.14159f;
+	glTranslatef(4.0f, 7.0f, 0.0f); //to move the position of circle towards +ve x axis
+	glBegin(GL_TRIANGLE_FAN); //drawing circle using triangle fan
+	glColor3f(0.1, 0.5, 0.0); //green in color
+	glVertex2f(0.0f, 0.0f); //placing at the origin
+	for (int i = 0; i <= 21; i++)
+		glVertex2f(radius * cosf(i * twopi / number), radius * sinf(i * twopi / number));
+	glEnd();
+	glFlush();
+	
+	
 
-	glFlush();  // Forces previously issued OpenGL commands to begin execution
 }
 
 int main(int argc, char** argv)
@@ -104,7 +111,7 @@ int main(int argc, char** argv)
 	glClearColor(0.0, 0.0, 0.0, 0.0);         // black background
 	glMatrixMode(GL_PROJECTION);              // sets the viewing projection, properties of the camera that views the object
 	glLoadIdentity();                           // start with identity matrix
-	glOrtho(0.0, 10.0, 0.0, 10.0, 1.0, 1.0);   // setting the coordinate system
+	glOrtho(0.0, 10.0, 0.0, 10.0, -1.0, 1.0);   // setting the coordinate system
 
 	glutDisplayFunc(display);
 	glutMainLoop();
